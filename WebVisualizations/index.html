@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Anime</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class='bg-dark'>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Anime</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,35 +38,34 @@
     </nav><br><br>
     <div class='container'>
         <div class='row justify-content-around'>
-            <div class='col-md-8 col-sm-12 bg-secondary border rounded'>
+            <div class='col-md-8 col-sm-12 border rounded bg-light'>
                 <h1>Anime</h1>
-                <img src="https://i.imgur.com/FqUBUxE.jpg" class="float-left" style="height:300px;margin-right:10px">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <hr>
+                <img src="Images/avgscorevsmyscore.png" class="float-left" style="height:300px;margin-right:10px">
+                <p>This project was made using data from the website <a href='https://myanimelist.net/'>MyAnimeList</a>,
+                    a website designed for users to rate and track anime watched. I used an unofficial API to pull my
+                    list of watched anime. Then, using the same API, I pulled more specific information for each show,
+                    including things like a show's popularity or average score across users of the website </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    I used this dataset to create different plots with matplotlib and pandas, examining different
+                    relationships in the data. You can see the most interesting and pertinent plots accompanied by
+                    written observations on this website, as well as the original dataset.
                 </p>
 
             </div>
             <div class=col-md-1></div>
 
-            <div class='col-md-3 col-sm-12 bg-secondary rounded'>
-                <h1>Visuals</h1>
-                <img src="https://i.imgur.com/FqUBUxE.jpg" alt="..." class="img-thumbnail" style='height:100px'>
-                <img src="https://i.imgur.com/FqUBUxE.jpg" alt="..." class="img-thumbnail" style='height:100px'><br>
-                <img src="https://i.imgur.com/FqUBUxE.jpg" alt="..." class="img-thumbnail" style='height:100px'>
-                <img src="https://i.imgur.com/FqUBUxE.jpg" alt="..." class="img-thumbnail" style='height:100px'>
+            <div class='col-md-3 col-sm-12 border rounded bg-light'>
+                <h2>Visuals</h2>
+                <hr>
+                <a href='visual-1.html'><img src="Images/avgscorevsmyscore.png" alt="..." class="img-thumbnail"
+                        style='height:100px'></a>
+                <a href='visual-2.html'><img src="Images/numberofanimepersource.png" alt="..." class="img-thumbnail"
+                        style='height:100px'></a><br><br>
+                <a href='visual-3.html'><img src="Images/numberofanimepertype.png" alt="..." class="img-thumbnail"
+                        style='height:100px'></a>
+                <a href='visual-4.html'><img src="Images/scorebyyear.png" alt="..." class="img-thumbnail"
+                        style='height:100px'></a>
             </div>
         </div>
     </div>
