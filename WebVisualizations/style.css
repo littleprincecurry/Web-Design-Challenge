@@ -1,0 +1,12 @@
+table{
+    display:block; 
+      height:800px;
+      width: 1200px;
+      overflow-y:scroll;
+      overflow-x:scroll;
+      justify-content: center;
+    }
+
+body{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
