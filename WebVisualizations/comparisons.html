@@ -3,64 +3,69 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Anime</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/journal/bootstrap.min.css"
-        integrity="sha384-QDSPDoVOoSWz2ypaRUidLmLYl4RyoBWI44iA5agn6jHegBxZkNqgm2eHb6yZ5bYs" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <title>MyAnimeList Completed Data - Comparisons</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type='text/css' href="style.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Anime</a>
+<body class='bg-dark'>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">MyAnimeList Completed Data</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" href="index.html">Home </a>
+                <a class="nav-link active" href="index.html">Home</a>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Visualizations
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="visual-1.html">Action </a>
-                        <a class="dropdown-item" href="visual-2.html">Another action</a>
-                        <a class="dropdown-item" href="visual-3.html">Something else here</a>
-                        <a class="dropdown-item" href="visual-4.html">Something else here</a>
+                        <a class="dropdown-item" href="visual-1.html">Average User Scores</a>
+                        <a class="dropdown-item" href="visual-2.html">Anime Sources</a>
+                        <a class="dropdown-item" href="visual-3.html">Anime per Type</a>
+                        <a class="dropdown-item" href="visual-4.html">Average Rating by Year</a>
                     </div>
                 </li>
-                <a class="nav-link" href="comparisons.html">Comparisons<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="comparisons.html">Comparisons</a>
                 <a class="nav-link" href="data.html">Data</a>
             </div>
         </div>
     </nav>
+    <br><br>
 
-    <div class='container'>
+    <div class='container bg-light border rounded'>
         <div class='row'>
             <div class='col'>
-                <h1>Comparison</h1>
+                <h1>Comparisons</h1>
+                <hr>
+                <br>
             </div>
         </div>
         <div class='row'>
-            <div class='col-lg-6 col-sm-12'>
-                <h3>Placeholder Text</h3>
-                <img src='Images/avgscorevsmyscore.png' />
+            <div class='col-md-6'>
+                <h3>Average User Scores</h3>
+                <a href='visual-1.html'> <img class='img-fluid' src='Images/avgscorevsmyscore.png' /> </a>
             </div>
-            <div class='col-lg-6 col-sm-12'>
-                <h3>Placeholder Text</h3>
-                <img src='Images/numberofanimepersource.png' />
+            <div class='col-md-6'>
+                <h3>Anime per Source</h3>
+                <a href='visual-2.html'><img class='img-fluid' src=' Images/numberofanimepersource.png' /></a>
             </div>
         </div>
+        <br>
         <div class='row'>
-            <div class='col-lg-6 col-sm-12'>
-                <h3>Placeholder Text</h3>
-                <img src='Images/numberofanimepertype.png' />
+            <div class='col-md-6'>
+                <h3>Anime per Type</h3>
+                <a href='visual-3.html'><img class='img-fluid' src='Images/numberofanimepertype.png' /></a>
             </div>
-            <div class='col-lg-6 col-sm-12'>
-                <h3>Placeholder Text</h3>
-                <img src='https://i.imgur.com/FqUBUxE.jpg' />
+            <div class='col-md-6'>
+                <h3>Score by Year</h3>
+                <a href='visual-4.html'><img class='img-fluid' src='Images/scorebyyear.png' /></a>
             </div>
         </div>
     </div>
